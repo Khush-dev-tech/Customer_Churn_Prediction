@@ -2,7 +2,7 @@
 
 # 📉 Customer Churn Prediction Dashboard
 
-An interactive, end-to-end machine learning dashboard built with *Streamlit* to predict telecom customer churn using a *Gradient Boosting Classifier*. This tool allows you to
+An interactive, end-to-end machine learning dashboard built with **Streamlit** to predict telecom customer churn using a **Gradient Boosting Classifier**. This tool allows you to
 
 ✅ Upload customer data
 🧠 Train a model
@@ -15,7 +15,7 @@ An interactive, end-to-end machine learning dashboard built with *Streamlit* to 
 ## 🚀 Features
 
 * ✅ Upload and preprocess Telco customer CSV files
-* 🧠 Train a *Gradient Boosting Classifier*
+* 🧠 Train a **Gradient Boosting Classifier**
 * 🔮 Make predictions on new/unseen customer data
 * 📈 Visualize:
 
@@ -33,7 +33,7 @@ An interactive, end-to-end machine learning dashboard built with *Streamlit* to 
 
 ## 📂 File Structure
 
-
+```
 stop-the-churn/
 │
 ├── dashboard.py         # Main Streamlit app
@@ -41,7 +41,7 @@ stop-the-churn/
 ├── telco_train.csv      # Sample training dataset
 ├── telco_test.csv       # Sample test dataset
 └── README.md            # This file
-
+```
 
 ---
 
@@ -52,13 +52,13 @@ stop-the-churn/
 * Format: CSV
 * Required columns:
 
-  * customerID, tenure, MonthlyCharges, TotalCharges
-  * Target column: Churn (values: Yes/No)
-* Optional: Features like gender, Partner, Contract, OnlineSecurity, etc.
+  * `customerID`, `tenure`, `MonthlyCharges`, `TotalCharges`
+  * Target column: `Churn` (values: Yes/No)
+* Optional: Features like `gender`, `Partner`, `Contract`, `OnlineSecurity`, etc.
 
 ### Test Data:
 
-* Same feature columns as training data (without Churn)
+* Same feature columns as training data (without `Churn`)
 
 ---
 
@@ -66,24 +66,24 @@ stop-the-churn/
 
 ### 1. Install Python Dependencies
 
-bash
+```bash
 pip install -r requirements.txt
-
+```
 
 ### 2. Run the Dashboard
 
-bash
+```bash
 streamlit run dashboard.py
-
+```
 
 ---
 
 ## 🧠 Machine Learning Model
 
-* *Algorithm:* GradientBoostingClassifier (from sklearn.ensemble)
-* *Target:* Binary churn classification (Churn mapped to churned)
-* *Categorical Encoding:* LabelEncoder
-* *Evaluation Metric:* ROC-AUC Score
+* **Algorithm:** `GradientBoostingClassifier` (from `sklearn.ensemble`)
+* **Target:** Binary churn classification (`Churn` mapped to `churned`)
+* **Categorical Encoding:** LabelEncoder
+* **Evaluation Metric:** ROC-AUC Score
 
 ---
 
@@ -101,7 +101,7 @@ streamlit run dashboard.py
 
 ## 🧮 Real-Time Churn Prediction
 
-* Accessible via the *sidebar*
+* Accessible via the **sidebar**
 * Fill out customer feature fields
 * Instantly receive churn probability and prediction
 * Visualize SHAP waterfall plot for the specific customer
@@ -112,31 +112,31 @@ streamlit run dashboard.py
 
 ### Input
 
-* *Training CSV* (must contain Churn column)
-* *Test CSV* (no Churn column required)
+* **Training CSV** (must contain `Churn` column)
+* **Test CSV** (no `Churn` column required)
 
 ### Output
 
 * Prediction CSV with:
 
-  * customerID, Probability, Churn_Predicted, Retain, cost, contract
+  * `customerID`, `Probability`, `Churn_Predicted`, `Retain`, `cost`, `contract`
 
 ---
 
 ## 📌 Example Workflow
 
-1. Upload your *training data* with a Churn column
-2. Click to *train the model*
+1. Upload your **training data** with a `Churn` column
+2. Click to **train the model**
 3. Review training metrics and SHAP importance
-4. Upload *test data* to generate predictions
+4. Upload **test data** to generate predictions
 5. Download predictions and explore visual insights
-6. Use the *sidebar* to predict churn for a single customer in real-time
+6. Use the **sidebar** to predict churn for a single customer in real-time
 
 ---
 
 ## 🧰 Dependencies
 
-
+```
 streamlit
 pandas
 numpy
@@ -146,13 +146,13 @@ plotly
 shap
 scikit-learn
 ipython
-
+```
 
 Install via:
 
-bash
+```bash
 pip install -r requirements.txt
-
+```
 
 ---
 
@@ -167,10 +167,10 @@ pip install -r requirements.txt
 
 ## 👩‍💻 Authors
 
-* *Sakshi Shelke*
-* *Khush Aghera*
-* *Yash Kumar*
+* **Sakshi Shelke**
+* **Khush Aghera**
+* **Yash Kumar**
 
-Built using *Python, **Streamlit*, and a lot of ☕.
+Built using **Python**, **Streamlit**, and a lot of ☕.
 
 ---
